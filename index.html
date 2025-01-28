@@ -13,25 +13,25 @@
 
 <body>
 
-
-
     <div class="container  my-5">
+        <h1 class="text-center">Create 10 New Mails!!!</h1>
         <div class="row">
-
-            <div class="card p-2 " style="width: 18rem;">
-
+            <div class="card col-5 mx-auto " style="width: 20rem;">
                 <!-- lista mail da riempire con inner/js -->
-                <ul id="mailList" class="list-group list-group-flush">
-                    <!-- <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a> -->
+                <ul id="mailList" class="list-group list-group-flush ">
+                    <!-- <a href="#" class="list-group-item list-group-item-action"></a> -->
                 </ul>
-
             </div>
 
         </div>
-        <!-- bottone sul quale generare le nuove 10 mail con interazione ADDeventListener! -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false" autocomplete="off">
-            New Mail List
-        </button>
+        <div class="col-1 mx-auto">
+
+            <!-- bottone sul quale generare le nuove 10 mail con interazione ADDeventListener! -->
+            <button type="button" class="btn btn-primary my-4" data-bs-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                Create
+            </button>
+        </div>
 
         <!-- link axios library -->
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

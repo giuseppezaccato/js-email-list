@@ -13,7 +13,7 @@ function mailGen(n) {
                 console.log(response.data.response)
 
                 //task genero la mail come innerHTML direttamente nella lista in pagina
-                mail.innerHTML += `<a href="#" class="list-group-item list-group-item-action">${response.data.response}</a>`
+                mail.innerHTML += `<a href="#" class="list-group-item list-group-item-action text-primary-emphasis">${response.data.response}</a>`
             })
             .catch(error => {
                 console.error(error)
@@ -40,7 +40,7 @@ mailGen(10);
 btn.addEventListener('click', () => {
 
     mail.innerHTML = "";
-    mailGen(15);
+    mailGen(10);
 
 })
 
