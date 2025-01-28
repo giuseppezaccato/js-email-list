@@ -1,5 +1,6 @@
 
 let mail = document.getElementById('mailList');
+const input = document.getElementById('inputNumber');
 const btn = document.querySelector('.btn');
 
 function mailGen(n) {
@@ -37,12 +38,17 @@ mailGen(10);
 //         console.error(error);
 //     });
 
+//task al click svuoto la lista di mail e riempio semplicemente rievocando la funzione(con piccolo controllo)
 btn.addEventListener('click', () => {
 
     mail.innerHTML = "";
-    mailGen(10);
 
+    //task piccolo controllo per non superare il min/max dell'input!
+    (input.value > 30 || input.value < 1) ?
+        (alert(`numeri consentiti da 1 a 30!!!`) + window.location.reload())
+        : mailGen(input.value);
 })
+
 
 
 
